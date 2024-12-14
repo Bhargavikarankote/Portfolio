@@ -1,0 +1,291 @@
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Dark background for the whole page */
+    color: #e0e0e0; /* Light text color for better contrast */
+}
+
+/* Header styles */
+header {
+    background-color: #000000; /* Dark black background for the header */
+    color: #ffffff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Light text for navigation links */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section and container styling */
+section {
+    padding: 60px 0;
+}
+
+section#about {
+    background-color: #2a2a2a; /* Slightly lighter dark background for About section */
+}
+
+section#projects {
+    background-color: #1e1e1e; /* Dark background for Projects */
+}
+
+section#education {
+    background-color: #2a2a2a; /* Same lighter dark background for consistency */
+}
+
+section#skills {
+    background-color: #1e1e1e; /* Dark background for Skills */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #ffffff; /* Light text color */
+}
+
+.container p {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #b0b0b0; /* Softer light color for body text */
+}
+
+/* Project and Education grid */
+.projects-grid, .education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project, .education-item {
+    background: #333333; /* Dark card background */
+    padding: 20px;
+    border: 1px solid #444444; /* Slightly lighter border for definition */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.project:hover, .education-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills section */
+.skills-list ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list ul li {
+    background: #333333; /* Dark background for skill items */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+.skills-list ul li:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.skills-list ul li img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* Contact form styles */
+#contact {
+    background-color: #2a2a2a; /* Dark background for contact section */
+}
+
+#contact-form {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #333333; /* Dark form background */
+    padding: 20px;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+#contact-form label {
+    font-weight: bold;
+    color: #e0e0e0; /* Light text for form labels */
+    margin-bottom: 8px;
+    display: block;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: #444444; /* Dark input background */
+    color: #ffffff; /* Light text for inputs */
+    font-size: 16px;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    outline: none;
+    border-color: #888888;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact-form button {
+    background-color: #555555; /* Dark button background */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact-form button:hover {
+    background-color: #777777; /* Lighter on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000000; /* Dark footer background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .skills-list ul li {
+        width: 100%;
+    }
+
+    .container p {
+        width: 100%;
+    }
+
+    #contact-form {
+        width: 90%;
+    }
+}
+
+
+
+
+/* Project and Education grid */
+.projects-grid, .education-grid {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project, .education-item {
+    background: #333333; /* Dark card background */
+    padding: 20px;
+    border: 1px solid #444444; /* Slightly lighter border for definition */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+    width: 250px; /* Fixed width for consistent appearance */
+}
+
+.project:hover, .education-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Skills section */
+.skills-list ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    padding: 0;
+}
+
+.skills-list ul li {
+    background: #333333; /* Dark background for skill items */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+.skills-list ul li:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}

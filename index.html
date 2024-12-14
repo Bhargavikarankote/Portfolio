@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Submission Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="logo">My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <h2>Hi, I'm BHARGAVI</h2>
+        <p>I am a final-year Computer Science student with a passion for technology and problem-solving. I am eager to apply my knowledge to real-world challenges and continue learning and growing in the field.</p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Multiple disease prediction using ML</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Sonar rock vs mine prediction</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <div class="education-item">
+                <h3>Bachelor's Degree in Computer Science</h3>
+                <p>PDA college of engineering, 2025</p>
+            </div>
+            <div class="education-item">
+                <h3>PUC (Pre-University Course) in Science</h3>
+                <p>Shree Guru Independent PU College, 2021</p>
+            </div>
+            <div class="education-item">
+                <h3>10th Standard</h3>
+                <p>Maharishi Vidya Mandir, 2019</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python</li>
+                <li>Machine Learning</li>
+                <li>Programming in C</li>
+                <!-- <li>Version Control (Git, GitHub)</li> -->
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
